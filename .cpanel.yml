@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/overnzbk/transfer.overseashighwaystudy.com/
+    - export DEPLOYPATH=/home/overnzbk/pathway.overseashighwaystudy.com/
     - /bin/mkdir -p "$DEPLOYPATH"
     - /bin/tar --exclude=.git --exclude=.cpanel.yml -cf - . | /bin/tar -xf - -C "$DEPLOYPATH"
